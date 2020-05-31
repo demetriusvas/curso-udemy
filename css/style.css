@@ -1,0 +1,114 @@
+body {
+    background: url(../img/1.png) repeat;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/************************* 
+-----------CAIXA--------- 
+*************************/
+.caixa {
+    /*margin: 1px 40px 0px 40px;/* top, right, bottom, left */
+    margin: auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 1200px) {
+    .caixa {
+      margin: 0px 50px 0px 50px;
+    }
+}
+
+/************************* 
+-----------HEADER--------- 
+*************************/
+.caixa header ul {
+    overflow: hidden;
+    background-color: rgb(30, 35, 38);
+}
+ 
+.caixa header li {
+    float: left;
+}
+
+.caixa header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.caixa header li a:hover {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+    background-color: rgb(47, 47, 47);
+}
+
+/************************* 
+-----------MAIN--------- 
+*************************/
+.caixa main {
+    background-color: rgb(37, 42, 46);
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.caixa main h1{
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.caixa main h2{
+    font-size: 1.3em;
+    padding: 20px;
+}
+
+.caixa main ul li{
+    padding: 20px;
+}
+
+.caixa main ul a{
+    color: whitesmoke;
+}
+
+/*
+***************************** 
+G R I D  C O N T A I N E R
+*****************************
+*/
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px; /*Make the grid smaller than the container*/
+    grid-template-rows: 280px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container img {
+    box-shadow: 3px 3px 10px rgb(31, 30, 30);
+}
+
+.grid-container > div {
+    text-align: center;
+}
+
+@media only screen and (max-width: 840px) {
+    .grid-container {
+        grid-template-columns: 350px;
+    }
+}
+
+/************************* 
+-----------FOOTER--------- 
+*************************/
+.caixa footer p {
+    background-color: rgb(30, 35, 38);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.8em;
+}
