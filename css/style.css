@@ -112,3 +112,52 @@ G R I D  C O N T A I N E R
     padding: 20px;
     font-size: 0.8em;
 }
+
+/************************* 
+-----------MOBILE--------- 
+*************************/
+@media only screen and (max-width: 483px) {
+    #nome {
+        display: none;
+    }
+    
+    .caixa {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .caixa main h1{
+        font-size: 1em;
+    }
+
+    .grid-container {
+        grid-template-rows: 210px;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .grid-container img {
+        width: 290px;
+        height: 174px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .caixa {
+        margin: 0px 10px 0px 10px;
+      }
+
+    .caixa main {
+        padding: 10px;
+    }
+
+    .caixa main h1{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .caixa footer p {
+        padding: 10px;
+        font-size: 0.5em;
+    }
+}
